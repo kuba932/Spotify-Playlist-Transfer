@@ -25,6 +25,9 @@
       </state>
     </system>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="PlaylistYtSp" />
+  </component>
   <component name="ProjectId" id="1jQHDZMSDf9VUoNZiUp3DGYMMJ4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -110,13 +113,17 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="277" y="55" key="SettingsEditor" timestamp="1603729510332">
+    <state x="277" y="55" key="SettingsEditor" timestamp="1603730219472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603729510332" />
+    <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603730219472" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603729348211">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1603729348211" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603730346216">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1603730346216" />
   </component>
 </project>
