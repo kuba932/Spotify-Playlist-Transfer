@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <com.example.playlistytsp.MyEditText
+        android:id="@+id/userName"
+        style="@style/CustomEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/youTubeUsernameHint"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:theme="@style/CustomEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.playlistytsp.MyEditText
+        android:id="@+id/playlistName"
+        style="@style/CustomEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/playlistNameHint"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:theme="@style/CustomEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <com.example.playlistytsp.MyEditText
+        android:id="@+id/userSpotifyID"
+        style="@style/CustomEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/spotifyUsernameHint"
+        android:singleLine="true"
+        android:theme="@style/CustomEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playlistName" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonTransfer"
+        style="@style/MyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/buttonTransferText"
+        android:theme="@style/MyButton"
+        app:layout_constraintTop_toBottomOf="@+id/userSpotifyID" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

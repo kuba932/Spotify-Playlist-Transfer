@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/youTubeUser"
+            style="@style/MyCustomTextView"
+            android:theme="@style/MyCustomTextView"
+            android:layout_width="129dp"
+            android:layout_height="50dp"
+            android:text="@string/youTubeUser"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/youTubeUserAnswer"
+            style="@style/MyCustomTextView"
+            android:theme="@style/MyCustomTextView"
+            android:layout_width="129dp"
+            android:layout_height="50dp"
+            android:text=""
+            android:textColor="@color/colorSecondary"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@+id/youTubeUser"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/colorSecondary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playlistName" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/playlistName"
+            style="@style/MyCustomTextView"
+            android:theme="@style/MyCustomTextView"
+            android:layout_width="129dp"
+            android:layout_height="50dp"
+            android:text="@string/playlistName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/youTubeUser"/>
+
+        <TextView
+            android:id="@+id/playlistNameAnswer"
+            style="@style/MyCustomTextView"
+            android:theme="@style/MyCustomTextView"
+            android:layout_width="129dp"
+            android:layout_height="50dp"
+            android:text=""
+            android:textColor="@color/colorSecondary"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@+id/playlistName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/colorSecondary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/youTubeUser" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/spotifyUser"
+            style="@style/MyCustomTextView"
+            android:theme="@style/MyCustomTextView"
+            android:layout_width="129dp"
+            android:layout_height="50dp"
+            android:text="@string/spotifyUserName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/playlistName" />
+
+        <TextView
+            android:id="@+id/spotifyUserAnswer"
+            style="@style/MyCustomTextView"
+            android:theme="@style/MyCustomTextView"
+            android:layout_width="129dp"
+            android:layout_height="50dp"
+            android:text=""
+            android:textColor="@color/colorSecondary"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@+id/spotifyUser"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        style="@style/MyButton"
+        android:theme="@style/MyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/buttonConfirm" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

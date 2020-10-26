@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Spotify Playlist Transfer</string>
+    <string name="buttonShapeRectangle">rectangle</string>
+    <string name="playlistNameHint">Playlist Name</string>
+    <string name="youTubeUsernameHint">YouTube Username</string>
+    <string name="spotifyUsernameHint">Your Spotify ID</string>
+    <string name="buttonTransferText">Transfer</string>
+    <string name="youTubeUser">YouTube user</string>
+    <string name="playlistName">Playlist name</string>
+    <string name="spotifyUserName">Spotify User</string>
+    <string name="buttonConfirm">Confirm</string>
+    <string name="emptyFieldsErrorMainActivity">Fields can not be empty!</string>
+    <string name="playListCopied">Playlist copied!</string>
+    <string name="incompleteData">Data is incomplete!</string>
+    <string name="youTubeUserNotFound">Error - user %1$s not found</string>
+    <string name="youTubePlaylistNotFound">Could not find %1$s playlist in user %2$s profile</string>
+</resources>

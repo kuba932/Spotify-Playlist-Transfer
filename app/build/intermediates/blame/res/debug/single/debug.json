@@ -1,0 +1,142 @@
+[
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_logo_spotify_round.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-xhdpi\\logo_spotify_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_logo_spotify.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-mdpi\\logo_spotify.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_logo_spotify_foreground.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-xxhdpi\\logo_spotify_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_logo_spotify.xml.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-anydpi-v26\\logo_spotify.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_logo_spotify.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-xhdpi\\logo_spotify.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_logo_spotify.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-xxhdpi\\logo_spotify.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_logo_spotify.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-hdpi\\logo_spotify.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo_spotify_background.xml.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\drawable\\logo_spotify_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\layout_spotify_search.xml.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\layout\\spotify_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_logo_spotify_round.xml.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-anydpi-v26\\logo_spotify_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_logo_spotify_round.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-mdpi\\logo_spotify_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_logo_spotify_foreground.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-xxxhdpi\\logo_spotify_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_logo_spotify_foreground.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-xhdpi\\logo_spotify_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\layout_web_auth.xml.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\layout\\web_auth.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_logo_spotify_round.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-xxxhdpi\\logo_spotify_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_logo_spotify_round.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-xxhdpi\\logo_spotify_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_logo_spotify_foreground.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-mdpi\\logo_spotify_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_logo_spotify_foreground.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-hdpi\\logo_spotify_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_logo_spotify.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-xxxhdpi\\logo_spotify.png"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_logo_spotify_round.png.flat",
+        "source": "C:\\Users\\Kuba\\AndroidStudioProjects\\PlaylistYtSp\\app\\src\\main\\res\\mipmap-hdpi\\logo_spotify_round.png"
+    }
+]
