@@ -14,8 +14,9 @@ import android.webkit.WebViewClient;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+
 /**
- * Class created for Spotify authorization purpose
+ * Class designed solely for authorization purpose. It is responsible for initiating a WebView for a Spotify authorization process
  */
 
 public class WebAuth extends AppCompatActivity {
@@ -24,12 +25,7 @@ public class WebAuth extends AppCompatActivity {
     WebView webView;
     String redirectUri;
 
-    public WebAuth(){
-    }
-
-    /**
-     * Creating a WebView for a Spotify authorization process
-     */
+    public WebAuth(){}
 
 
     @SuppressLint("SetJavaScriptEnabled")
@@ -40,11 +36,10 @@ public class WebAuth extends AppCompatActivity {
 
         webView = findViewById(R.id.webview);
 
-
         webView.setWebViewClient(new MyWebViewClient(){
             @Override
             public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
-                Log.e("Błąd webView", error.toString());
+                Log.e("webView error", error.toString());
                 view.loadUrl(url);
             }
 
@@ -62,12 +57,11 @@ public class WebAuth extends AppCompatActivity {
 
         webView.loadUrl(url);
 
-
     }
 
     /**
      * MyWebViewClient entity is responsible for getting 'code' from redirect Uri.
-     * This code is later needed to create a valid token.
+     * This code is later needed to create a valid Spotify token.
      * currentURl - represent a current URl address and if it is the same as redirectUri, the 'code part' is being assigned to a proper variable ('code')
      */
 
@@ -87,8 +81,6 @@ public class WebAuth extends AppCompatActivity {
                 Intent resultIntent = new Intent();
                 String codeRedirected = currentUrl.substring(76);
                 resultIntent.putExtra("code", codeRedirected);
-
-                Log.d("codeR", codeRedirected);
 
                 setResult(RESULT_OK, resultIntent);
                 finish();
