@@ -12,10 +12,8 @@ public class YouTubeTitleTranslator {
     public YouTubeTitleTranslator() {
     }
 
-    /**
-     * @param songTitle - title of a song from a Youtube playlist
-     * @return - a String ready to pass to Spotify search engine
-     */
+
+    //  this method returns a String ready to pass to Spotify search engine
 
     public String translateYouTubeTitle (String songTitle){
 
@@ -41,7 +39,7 @@ public class YouTubeTitleTranslator {
                 Log.d("isNumber error", ex.getMessage());
             }
 
-            //removing unwanted parts like '%22' or '%29'
+        //removing unwanted parts like '%22' or '%29'
             if (a == '%' && isNumber(b) && isNumber(c)){
                 numbers.add(i);
                 numbers.add(i+1);
@@ -73,16 +71,10 @@ public class YouTubeTitleTranslator {
             }
         }
 
-        Log.d("translated", builder.toString());
-
         return builder.toString();
     }
 
-    /**
-     *
-     * @param c - char passed from a String representing song's title
-     * @return true if c is a number and false if it isn't
-     */
+   // Method designed to check if specified char is a number
 
     private boolean isNumber (char c){
         char [] numbers = new char[] {0,1,2,3,4,5,6,7,8,9};

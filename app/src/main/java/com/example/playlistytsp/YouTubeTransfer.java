@@ -27,19 +27,23 @@ public class YouTubeTransfer {
     private String playlistName;
 
     private ArrayList <String> songsList;
-    private final String packageName = "com.example.playlisttransfer";
-    private final String sig = "fbf6bb714a1252f9cc18e5c05618588924880bce"; // SHA-1
-    private final String APIKey = "AIzaSyCzBAR_riSD6mFp2Dn_7jmzBUf-d8BvHrE";
+    final String packageName;
+    final String SHA1;
+    final String APIKey;
 
     /**
      * @param connectionInterface - passed from MainActivity (working on main thread)
-     * @param userName - YouTube user name got from user
-     * @param playlistName - YouTube playlist name got from user
+     * @param userName - YouTube user name got from the user
+     * @param playlistName - YouTube playlist name got from the user
      * @param songsList - empty array for song's titles fetched from the user's playlist
      * @param mainActivity - object representing MainActivity class
      */
 
-    YouTubeTransfer (ConnectionInterface connectionInterface, MainActivity mainActivity, String userName, String playlistName, ArrayList <String> songsList){
+    YouTubeTransfer (String packageName, String SHA1, String APIKey, ConnectionInterface connectionInterface, MainActivity mainActivity, String userName, String playlistName, ArrayList <String> songsList){
+        this.packageName = packageName;
+        this.SHA1 = SHA1;
+        this.APIKey = APIKey;
+
         this.connectionInterface = connectionInterface;
         this.userName = userName;
         this.playlistName = playlistName;
@@ -51,12 +55,10 @@ public class YouTubeTransfer {
         getChannelId();
     }
 
-    /**
-     * Fetching channel ID of the user
-     */
+     //Fetching channel ID of the user
 
     private void getChannelId(){
-        connectionInterface.getChannelId(packageName, sig,"snippet", userName, APIKey).enqueue(new Callback<JsonObject>() {
+        connectionInterface.getChannelId(packageName, SHA1,"snippet", userName, APIKey).enqueue(new Callback<JsonObject>() {
             @Override
             public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
 
@@ -81,7 +83,7 @@ public class YouTubeTransfer {
 
     private void getConnection(){
 
-        connectionInterface.getPlaylists(packageName, sig, "snippet", channelID, APIKey).enqueue(new Callback<JsonObject>() {
+        connectionInterface.getPlaylists(packageName, SHA1, "snippet", channelID, APIKey).enqueue(new Callback<JsonObject>() {
             @Override
             public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
 
@@ -109,13 +111,12 @@ public class YouTubeTransfer {
         });
     }
 
-    /**
-     * Fetching songs from the user's playlist
-     */
+
+    //Fetching songs from the user's playlist
 
     private void getItemsFromPlaylist (){
 
-        connectionInterface.getItemsFromPlaylist(packageName, sig,"snippet", 50, playlistID, 50, APIKey).enqueue(new Callback<JsonObject>() {
+        connectionInterface.getItemsFromPlaylist(packageName, SHA1,"snippet", 50, playlistID, 50, APIKey).enqueue(new Callback<JsonObject>() {
             @Override
             public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
                 try {
@@ -123,7 +124,6 @@ public class YouTubeTransfer {
 
                     JsonArray songs = resultObject.getAsJsonArray("items");
 
-                    Log.d("songsMain", songs.size() + ":" + songs.toString());
 
                     for (int i = 0; i < songs.size(); i++) {
                         try {
@@ -133,7 +133,6 @@ public class YouTubeTransfer {
                             Log.d(ex.getCause().toString(), ex.getMessage());
                         }
                         mainActivity.goToSpotify();
-                        Log.d("songs", songsList.toString());
                     }
                 }catch (Exception e){
                     e.printStackTrace();

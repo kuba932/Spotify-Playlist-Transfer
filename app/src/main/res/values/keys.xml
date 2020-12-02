@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--This XML file is attached only for demo purpose-->
+
+<resources>
+<!-- Spotify -->
+    <string name="clientID">176f4f2b1e20446eb1d7b899fb2da684</string>
+    <string name="clientSecret">8ea4e4bcb63e4d39aa3098131ac64694</string>
+
+<!--  Youtube  -->
+
+    <string name="SHA1">fbf6bb714a1252f9cc18e5c05618588924880bce</string>
+    <string name="packageName">com.example.playlisttransfer</string>
+    <string name="youtubeApiKey">AIzaSyCzBAR_riSD6mFp2Dn_7jmzBUf-d8BvHrE</string>
+</resources>

@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     ConnectionInterface connectionInterface;
     ArrayList <String> songsList;
 
-    String yutubeUrl = "https://www.googleapis.com/youtube/v3/";
+    String youtubeUrl;
     String userName;
     String playlistName;
     String spotifyID;
@@ -31,14 +31,14 @@ public class MainActivity extends AppCompatActivity {
 
     Context context;
 
-    /**
-     * Getting data from the user about his YouTube and Spotify account
-     */
+    // Getting data from the user about his YouTube and Spotify account
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        youtubeUrl = getString(R.string.youtubeUrl);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setLogo(R.mipmap.logo_spotify);
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         songsList = new ArrayList<>();
 
         retrofit = new Retrofit.Builder()
-                .baseUrl(yutubeUrl)
+                .baseUrl(youtubeUrl)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -69,7 +69,11 @@ public class MainActivity extends AppCompatActivity {
                 playlistName = String.valueOf(playlistEdit.getText());
                 spotifyID = String.valueOf(userSpotifyID.getText());
 
-                youTubeTransfer = new YouTubeTransfer(connectionInterface, this, userName, playlistName, songsList);
+                String packageName = getResources().getString(R.string.packageName);
+                String sha1 = getResources().getString(R.string.SHA1);
+                String apiKey = getResources().getString(R.string.youtubeApiKey);
+
+                youTubeTransfer = new YouTubeTransfer(packageName, sha1, apiKey, connectionInterface, this, userName, playlistName, songsList);
                 youTubeTransfer.startYouTubeDownloadProcess();
 
             }else {
@@ -79,9 +83,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    /**
-     * Going to SpotifySearch Activity to create a playlist
-     */
+     //Going to SpotifySearch Activity to create a playlist
 
     public void goToSpotify(){
         Intent goToSpotify = new Intent(this, SpotifySearch.class);

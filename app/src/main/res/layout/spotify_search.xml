@@ -32,7 +32,7 @@
             android:layout_width="129dp"
             android:layout_height="50dp"
             android:text=""
-            android:textColor="@color/colorSecondary"
+            android:textColor="@color/colorDarkGreen"
             android:layout_marginStart="5dp"
             app:layout_constraintStart_toEndOf="@+id/youTubeUser"
             app:layout_constraintTop_toTopOf="parent" />
@@ -43,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
 
-        android:background="@color/colorSecondary"
+        android:background="@color/colorDarkGreen"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/playlistName" />
 
@@ -70,7 +70,7 @@
             android:layout_width="129dp"
             android:layout_height="50dp"
             android:text=""
-            android:textColor="@color/colorSecondary"
+            android:textColor="@color/colorDarkGreen"
             android:layout_marginStart="5dp"
             app:layout_constraintStart_toEndOf="@+id/playlistName"
             app:layout_constraintTop_toTopOf="parent" />
@@ -82,7 +82,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
 
-        android:background="@color/colorSecondary"
+        android:background="@color/colorDarkGreen"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/youTubeUser" />
 
@@ -109,7 +109,7 @@
             android:layout_width="129dp"
             android:layout_height="50dp"
             android:text=""
-            android:textColor="@color/colorSecondary"
+            android:textColor="@color/colorDarkGreen"
             android:layout_marginStart="5dp"
             app:layout_constraintStart_toEndOf="@+id/spotifyUser"
             app:layout_constraintTop_toTopOf="parent" />

@@ -14,4 +14,8 @@
     <string name="incompleteData">Data is incomplete!</string>
     <string name="youTubeUserNotFound">Error - user %1$s not found</string>
     <string name="youTubePlaylistNotFound">Could not find %1$s playlist in user %2$s profile</string>
+    <string name="youtubeUrl">https://www.googleapis.com/youtube/v3/</string>
+    <string name="spotifyURL">https://accounts.spotify.com/</string>
+    <string name="redirect_uri">https://raw.githubusercontent.com/kuba932/testLinkDeep/master/TestFile</string>
+    <string name="state_Spotify">34fFs29kd09</string>
 </resources>

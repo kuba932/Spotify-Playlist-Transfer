@@ -20,7 +20,6 @@ import com.google.gson.JsonObject;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
-import java.time.LocalDate;
 import java.util.ArrayList;
 
 import retrofit2.Retrofit;
@@ -28,7 +27,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * Class created for connecting to Spotify's servers
- *Class process data with songs titles passed from MainActivity and create playlist on a Spotify account
+ * Class process data with songs titles passed from MainActivity and create playlist on a Spotify account
  */
 
 public class SpotifySearch extends AppCompatActivity {
@@ -38,16 +37,16 @@ public class SpotifySearch extends AppCompatActivity {
     TextView spotifyUserTextView;
     Button confirmButton;
 
-    String spotifyURL = "https://accounts.spotify.com/";
-    String clientID = "176f4f2b1e20446eb1d7b899fb2da684";
-    String clientSecret = "8ea4e4bcb63e4d39aa3098131ac64694";
+    String spotifyURL = getString(R.string.spotifyURL);
+    String clientID = getResources().getString(R.string.clientID);
+    String clientSecret = getResources().getString(R.string.clientSecret);
     String spotifyUserId;
     String playlistName;
-    String encodedClientIDandSecret;
-    String redirect_uri = "https://raw.githubusercontent.com/kuba932/testLinkDeep/master/TestFile";
-    String formatedRedirect_uri;
+    String encodedClientIDAndSecret;
+    String redirect_uri = getString(R.string.redirect_uri);
+    String formattedRedirect_uri;
     String code;
-    String state = "34fFs29kd09";
+    String state = getString(R.string.state_Spotify);
     StringBuilder urlAuth;
 
     SpotifyToken spotifyToken;
@@ -57,9 +56,7 @@ public class SpotifySearch extends AppCompatActivity {
 
     Retrofit spotifyRetrofit;
 
-    /**
-     * Constructor with a basic Retrofit object used for connection.
-     */
+    // Constructor with a basic Retrofit object used for connection.
 
     public SpotifySearch (){
 
@@ -75,9 +72,11 @@ public class SpotifySearch extends AppCompatActivity {
         setContentView(R.layout.spotify_search);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setLogo(R.mipmap.logo_spotify);
-        actionBar.setDisplayUseLogoEnabled(true);
-        actionBar.setDisplayShowHomeEnabled(true);
+        if (actionBar != null) {
+            actionBar.setLogo(R.mipmap.logo_spotify);
+            actionBar.setDisplayUseLogoEnabled(true);
+            actionBar.setDisplayShowHomeEnabled(true);
+        }
 
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(SpotifySearch.this);
 
@@ -99,7 +98,7 @@ public class SpotifySearch extends AppCompatActivity {
         confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (playlistName.isEmpty() || spotifyUserId.isEmpty() || playlistName.isEmpty()){
+                if (playlistName.isEmpty() || spotifyUserId.isEmpty()){
                     Toast.makeText(SpotifySearch.this, getString(R.string.incompleteData), Toast.LENGTH_SHORT).show();
                 }else {
                     authorize();
@@ -108,33 +107,32 @@ public class SpotifySearch extends AppCompatActivity {
         });
     }
 
-    /**
-     * This method is used for encoding client ID and client Secret to Spotify format
-     */
+    // This method is used for encoding client ID and client Secret to Spotify format
 
     private void setEncodeClientIdSecret (){
         byte[] data = new byte[0];
-        String clientIdandSecret = clientID + ":" + clientSecret;
+        String clientIDandSecret = clientID + ":" + clientSecret;
         try {
-            data = clientIdandSecret.getBytes("UTF-8");
+            data = clientIDandSecret.getBytes("UTF-8");
         } catch (UnsupportedEncodingException e) {
             Log.d("ClientIdSecret error",e.getMessage());
         }
-        encodedClientIDandSecret = Base64.encodeToString(data, Base64.NO_WRAP);
+        encodedClientIDAndSecret = Base64.encodeToString(data, Base64.NO_WRAP);
     }
 
-    private void setFormatedRedirect_uri () throws UnsupportedEncodingException {
-        formatedRedirect_uri = URLEncoder.encode(redirect_uri, "UTF-8");
+    private void setFormattedRedirect_uri() throws UnsupportedEncodingException {
+        formattedRedirect_uri = URLEncoder.encode(redirect_uri, "UTF-8");
     }
 
-    /**
-     * Method responsible for authorizing this application to use user's spotify account accordingly to 'scope'.
-     * It directs user to a @WebAuth activity solely for this purpose. If user already gave his consent, he is directed to 'onActivityResult' automatically.
-     */
+
+    /*
+     Method responsible for authorizing this application to use user's spotify account accordingly to 'scope'.
+     It directs user to a @WebAuth activity solely for this purpose. If user already gave his consent, he is directed to 'onActivityResult' automatically.
+    */
 
     private void authorize (){
         try {
-            setFormatedRedirect_uri();
+            setFormattedRedirect_uri();
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
@@ -145,7 +143,7 @@ public class SpotifySearch extends AppCompatActivity {
         urlAuth.append("https://accounts.spotify.com/authorize?");
         urlAuth.append("client_id=" + clientID);
         urlAuth.append("&response_type=code");
-        urlAuth.append("&redirect_uri=" + formatedRedirect_uri);
+        urlAuth.append("&redirect_uri=" + formattedRedirect_uri);
         urlAuth.append("&scope=user-read-private%20playlist-modify-public%20playlist-read-private%20playlist-modify-private%20playlist-read-collaborative");
         urlAuth.append("&state=" + state);
 
@@ -155,9 +153,8 @@ public class SpotifySearch extends AppCompatActivity {
         startActivityForResult(webIntent, 1);
     }
 
-    /**
-     * Parsing result from WebAuth
-     */
+
+     //Parsing result from WebAuth. Cutting unwanted parts of the "code" passed by WebView
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -173,13 +170,11 @@ public class SpotifySearch extends AppCompatActivity {
         }
     }
 
-    /**
-     * Creating token with a 'code' from onActivityResult
-     */
+    //Creating token with a 'code' from onActivityResult
 
     private void createToken (){
 
-        String authorizationHeader = "basic " + encodedClientIDandSecret;
+        String authorizationHeader = "basic " + encodedClientIDAndSecret ;
 
         ConnectionInterface connectionInterface = spotifyRetrofit.create(ConnectionInterface.class);
 
@@ -210,9 +205,7 @@ public class SpotifySearch extends AppCompatActivity {
         });
     }
 
-    /**
-     * Creating playlist on user's Spotify account. Initiation of tracks searching and adding.
-     */
+     // Creating playlist on user's Spotify account. Initiation of tracks searching and adding.
 
     private void createPlaylist () {
         String url = "https://api.spotify.com/v1/users/" + spotifyUserId + "/playlists";
@@ -257,10 +250,8 @@ public class SpotifySearch extends AppCompatActivity {
         });
     }
 
-    /**
-     * Searching for a track from the YouTube playlist
-     * @param title - String representing song title from songsList
-     */
+
+     // Searching for a track from the YouTube playlist
 
     private void searchTrack (String title){
 
@@ -269,8 +260,6 @@ public class SpotifySearch extends AppCompatActivity {
         YouTubeTitleTranslator translator = new YouTubeTitleTranslator();
 
         String titleEncoded = translator.translateYouTubeTitle(title);
-
-        Log.d("trans", titleEncoded);
 
         ConnectionInterface jsonInterfacePost = spotifyRetrofit.create(ConnectionInterface.class);
 
@@ -290,8 +279,6 @@ public class SpotifySearch extends AppCompatActivity {
                 }catch (Exception ex){
                     Log.d("Song not found", titleEncoded);
                 }
-                Log.d("response", String.valueOf(response.code()));
-
             }
 
             @Override
@@ -301,9 +288,7 @@ public class SpotifySearch extends AppCompatActivity {
         });
     }
 
-    /**
-     * Adding track to the playlist.
-     */
+    // Adding track to the playlist.
 
     private void addTrack (String songUri){
         String url = ("https://api.spotify.com/v1/playlists/" + sharedPreferences.getString("playlistID","") + "/tracks");

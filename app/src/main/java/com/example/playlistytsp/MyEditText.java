@@ -13,8 +13,6 @@ import androidx.appcompat.widget.AppCompatEditText;
 
 public class MyEditText extends AppCompatEditText {
 
-    String test;
-
 
     public MyEditText(@NonNull Context context) {
         super(context);
