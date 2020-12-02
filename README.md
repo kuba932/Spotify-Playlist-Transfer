@@ -28,7 +28,7 @@ After that you can simply import this repository to Android Studio and run it on
 
 You can also download .apk file and install it straight on your Android device!
 
-To do that go to *URL*
+To do that go to https://github.com/kuba932/Spotify-Playlist-Transfer/releases/
 
 ## Built with
  * Java
@@ -38,4 +38,4 @@ To do that go to *URL*
  * Material Design from Google
 
 ## License
-This code is developed under the terms of the OpenWeatherMap license.
+This code is developed under the terms of the YouTube license and Spotify license.
