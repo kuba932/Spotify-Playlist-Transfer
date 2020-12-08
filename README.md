@@ -26,9 +26,7 @@ To do that you have to download and install the Android environment:
 
 After that, you can simply import this repository to Android Studio and run it on AVD.
 
-You can also download the .apk file and install it straight on your Android device!
-
-To do that go to https://github.com/kuba932/Spotify-Playlist-Transfer/releases/
+You can also download the .apk file and install it straight on your Android device! - https://github.com/kuba932/Spotify-Playlist-Transfer/releases/
 
 ## Built with
  * Java
