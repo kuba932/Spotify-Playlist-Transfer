@@ -37,16 +37,16 @@ public class SpotifySearch extends AppCompatActivity {
     TextView spotifyUserTextView;
     Button confirmButton;
 
-    String spotifyURL = getString(R.string.spotifyURL);
-    String clientID = getResources().getString(R.string.clientID);
-    String clientSecret = getResources().getString(R.string.clientSecret);
+    String spotifyURL;
+    String clientID;
+    String clientSecret;
     String spotifyUserId;
     String playlistName;
     String encodedClientIDAndSecret;
-    String redirect_uri = getString(R.string.redirect_uri);
+    String redirect_uri;
     String formattedRedirect_uri;
     String code;
-    String state = getString(R.string.state_Spotify);
+    String state;
     StringBuilder urlAuth;
 
     SpotifyToken spotifyToken;
@@ -57,14 +57,6 @@ public class SpotifySearch extends AppCompatActivity {
     Retrofit spotifyRetrofit;
 
     // Constructor with a basic Retrofit object used for connection.
-
-    public SpotifySearch (){
-
-        spotifyRetrofit = new Retrofit.Builder()
-                .baseUrl(spotifyURL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +71,17 @@ public class SpotifySearch extends AppCompatActivity {
         }
 
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(SpotifySearch.this);
+
+        spotifyURL = getString(R.string.spotifyURL);
+        clientID = getResources().getString(R.string.clientID);
+        clientSecret = getResources().getString(R.string.clientSecret);
+        redirect_uri = getString(R.string.redirect_uri);
+        state = getString(R.string.state_Spotify);
+
+        spotifyRetrofit = new Retrofit.Builder()
+                .baseUrl(spotifyURL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
 
         youtubeUserTextView = findViewById(R.id.youTubeUserAnswer);
         playListNameTextView = findViewById(R.id.playlistNameAnswer);
